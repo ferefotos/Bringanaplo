@@ -1,0 +1,282 @@
+.root{
+  
+}
+
+/* Tab-pane *********************/
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+.tab-pane:top {
+    -fx-background-color: #686868;
+}
+.tab-pane .tab{
+    -fx-background-color: linear-gradient(#d0fded 0%, #90ceb7 80%); 
+}
+.tab-pane .tab:hover{
+    -fx-background-color: linear-gradient(#c3ebde 0%, #afe9d4 100%);
+}
+.tab-pane .tab:selected{
+    -fx-background-color: linear-gradient(#e7fdf6 0%, #d0fded 100%); 
+}
+.tab .tab-label { 
+    -fx-text-fill: #828282;
+    -fx-font-weight: bold;
+}
+/* Grid-pane *********************/
+#gridpane{
+    -fx-background-color: #686868;
+    -fx-background-image: url("bike_bg.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right bottom;
+}
+/* Separator ********************/
+.separator .line{
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+    -fx-border-color: #8be2d1;
+}
+
+/* Text-field ********************/
+.text-field{
+    -fx-border-color:  #90ceb7;
+}
+
+/* Combo-box *****************************************************************/
+.combo-box{
+    -fx-border-color:  #90ceb7;
+}
+.combo-box .arrow-button{
+    -fx-background-color: linear-gradient(#b5ecd8 0%, #90ceb7 80%);
+}
+.combo-box .arrow-button:hover{
+    -fx-background-color: derive(#90ceb7,30%);
+    -fx-cursor: hand;
+}
+.combo-box .arrow-button:hover .arrow{
+    /*-fx-background-color: #ffd000;*/
+}
+.combo-box-popup .list-view {
+    -fx-border-color:  #90ceb7;
+}
+.combo-box-base{
+    -fx-background-color: linear-gradient(#f5fdfa 0%, #e2f7ef 80%);
+}
+.combo-box-base:hover, .combo-box-base:focused{
+    -fx-background-color:#c9e6db;
+}
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: #71b9b0;
+    -fx-text-fill: -fx-text-inner-color;
+}
+.combo-box-popup .list-view .list-cell:filled:selected{
+    -fx-background-color: #7cc4bb;
+}
+
+
+/* Table-view ****************************************************************/
+/*oszlop fejléc*/
+.table-view{
+    
+}
+.table-view .column-header {
+    -fx-background-color: linear-gradient(#d0fded 0%, #90ceb7 100%);
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: linear-gradient(#d0fded 0%, #90ceb7 100%);
+}
+/*sorok*/
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #ffffff;
+   /* -fx-background-insets: 0, 0 0 1 0;*/
+   }
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #e2f7ef;
+   /* -fx-background-insets: 0, 0 0 1 0;*/
+}
+/*Kijelölt sor*/
+.table-row-cell:selected {
+    -fx-background-color: #71b9b0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+    -fx-text-fill: #ffd414;
+}
+.table-row-cell:selected .table-cell{
+    /*-fx-text-fill: #ffd414;*/
+    -fx-text-fill: #3a3a3a;
+    -fx-font-weight: bold;
+}
+
+/* Scrollbar *********************************************************************/
+.scroll-bar:horizontal ,.scroll-bar:vertical{
+    -fx-background-color: #7d7d7d;
+}
+.combo-box .scroll-bar:horizontal ,.combo-box .scroll-bar:vertical{
+    -fx-background-color: #b8b8b8;
+}
+/*scrollbar nyilak*/
+.increment-button ,.decrement-button{
+    -fx-background-color:transparent;
+    -fx-border-color:derive(#32dfd6,50%);
+    -fx-border-radius:40em;
+}
+.increment-button:hover , .decrement-button:hover{
+    -fx-background-color:derive(#71b9b0,0%);
+    -fx-cursor: hand;
+}
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow{
+    -fx-background-color: #ffe000;
+}
+/*Scrollbar csúszka*/
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb{
+    -fx-background-color:derive(#8be2d1,50%);
+	/*-fx-background-insets: 0, 0, 0;*/
+	-fx-background-radius:40em;
+}
+.scroll-bar .thumb:hover{
+    -fx-background-color: derive(#8be2d1,70%);
+    -fx-cursor: hand;
+}
+.scroll-bar .thumb:pressed{
+    -fx-background-color: derive(#8be2d1,30%);
+    -fx-cursor: closed_hand;
+}
+/*Scrollbar útja*/
+.scroll-bar:horizontal .track ,
+.scroll-bar:vertical .track{
+     -fx-background-color: transparent;
+	 -fx-border-color:derive(#32dfd6,50%);
+    -fx-border-radius:40em;
+}
+/* Gombok ***************************************************************/
+.button{
+    -fx-background-color: linear-gradient(#b5ecd8 0%, #90ceb7 80%);
+    -fx-border-color: #00b289;
+}
+
+.button:hover{
+    -fx-background-color: derive(#90ceb7,30%);
+    -fx-cursor: hand;
+}
+
+.button:pressed{
+    -fx-background-color: #6ecaa8;
+    -fx-cursor: closed_hand;
+}
+/* DatePicker*************************************************************/
+
+/*A beviteli mező (ami látszik)*/
+.date-picker {
+    -fx-background-color: #90ceb7; /*Csak a bevitelő mező körvonala*/
+}
+/*A gomb, amire lenyílik a naptár*/  
+.date-picker .arrow-button{
+    -fx-background-color: linear-gradient(#b5ecd8 0%, #90ceb7 80%);
+}
+.date-picker .arrow-button:hover{
+    -fx-background-color: derive(#90ceb7,30%);
+    -fx-cursor: hand;
+}
+/*A lenyíló naptár*/
+.date-picker-popup  {
+    -fx-border-color: #90ceb7;
+   /* -fx-background-color: #90ceb7;*/
+}
+/*A naptár fejléce*/
+.date-picker-popup .month-year-pane {
+    -fx-padding: 8px;
+    -fx-background-color: linear-gradient(#d0fded 0%, #90ceb7 100%);
+    /*-fx-background-color: #d0fded;*/
+}
+/*Fejléc cimkéje (Hónap év )*/
+.date-picker-popup > .month-year-pane > .spinner > .spinner-label {
+    -fx-font-size: 1.05em;
+    -fx-text-fill: #505050;
+    -fx-font-weight: bold;
+}
+/*Hét napjai sáv*/
+.date-picker-popup .day-name-cell {
+    -fx-font-size: 1.0em;
+    -fx-padding: 2px;
+    -fx-text-fill: #229784;
+    -fx-font-weight: bold;
+}
+/*Év és hónap léptető nyilak*/
+.date-picker .button {
+    -fx-background-color: transparent;
+    -fx-border-color:transparent;
+    -fx-pref-height: 25px;
+    -fx-pref-width: 25px;
+    /*-fx-border-radius: 50%;*/
+    -fx-background-radius: 50%;
+}
+.date-picker .button:hover {
+    -fx-background-color: linear-gradient(#7cc4bb 20%, #71b9b0 80%);
+}
+.date-picker .button:hover .left-arrow, .date-picker .button:hover .right-arrow{
+    -fx-background-color: #ffe000; /*nyíl színe*/
+}
+/*Naptár cellái*/    
+.date-picker .day-cell {
+    /*-fx-background-color: transparent;*/
+    /*-fx-pref-width:25px ;
+    -fx-pref-height:25px ;*/
+}
+.date-picker .day-cell:hover {
+    -fx-background-color: #71b9b0;
+}
+.date-picker-popup .previous-month:hover,
+.date-picker-popup .next-month:hover {
+    -fx-background-color: #b4d3d3;
+}
+.date-picker .day-cell:focused {
+    -fx-background-color:#90ceb7;
+} 
+.date-picker-popup .today {
+    -fx-border-color: #90ceb7;
+    -fx-border-insets: 1;
+    -fx-background-insets: 1;
+}
+
+/*Charts ****************************************************************************/ 
+.chart{
+    -fx-background-color:#686868;
+} 
+.chart-legend {
+    -fx-background-color:#797979;
+    /*-fx-background-color:  transparent;*/
+    /*-fx-padding: 20px;*/
+ }
+ .chart-legend-item-symbol{
+    -fx-background-radius: 5;
+    -fx-width:150%;
+    -fx-height:150%;
+ }
+ .chart-legend-item{
+     -fx-text-fill: #ffffff;
+     -fx-padding: 0 15 0 0;
+ }
+ .chart-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 1.6em;
+  }
+  .axis-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+  }
+  .chart-horizontal-grid-lines {
+    -fx-stroke: #90ceb7;
+  }
+  .chart-vertical-grid-lines {
+    -fx-stroke: #90ceb7;
+}
+  .chart-plot-background {
+    -fx-background-color: #ffffff;
+}
+.chart-alternative-row-fill {
+    -fx-fill: #e2f7ef;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+
